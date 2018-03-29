@@ -369,13 +369,13 @@ G4VPhysicalVolume* LYSimDetectorConstruction::ConstructDetector()
         //Fiber groove visualization attributes
         G4VisAttributes * FibGrooveVisAtt = new G4VisAttributes(G4Colour(0.5,0.5,0.5));
         FibGrooveVisAtt->SetForceWireframe(true);
-        FibGrooveVisAtt->SetVisibility(false);
+        FibGrooveVisAtt->SetVisibility(true);
         logicFiberGroove->SetVisAttributes(FibGrooveVisAtt);
 
         //Fiber visualization attributes
         G4VisAttributes * FibVisAtt = new G4VisAttributes(G4Colour(0.,1.,1.));
         FibVisAtt->SetForceWireframe(true);
-        FibVisAtt->SetVisibility(false);
+        FibVisAtt->SetVisibility(true);
         logicFiberOuterCladding->SetVisAttributes(FibVisAtt);
         logicFiberInnerCladding->SetVisAttributes(FibVisAtt);
         logicFiberCore->SetVisAttributes(FibVisAtt);
