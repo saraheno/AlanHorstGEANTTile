@@ -81,7 +81,7 @@ void LYSimPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
         SetOptPhotonPolar();
     }
     G4ThreeVector pos = particleSource->GetParticlePosition();
-    //std::cout << "XYZXYZXYZ  pos.x" << pos.x() << std::endl;
+    #std::cout << "XYZXYZXYZ " << pos.x()<<" "<<pos.y()<<" "<<pos.z() << std::endl;
 
     particleSource->GeneratePrimaryVertex(anEvent);
 
